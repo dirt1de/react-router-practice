@@ -2,9 +2,9 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div>
+        <h1 style={{textAlign:"center"}}>
             This is the Home page
-        </div>
+        </h1>
     )
 }
 

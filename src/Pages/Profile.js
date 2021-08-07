@@ -1,10 +1,26 @@
-import React from 'react'
+import {useEffect, React} from 'react'
 
-const Profile = () => {
+import { useHistory } from 'react-router'
+
+const Profile = ({isLogIn}) => {
+
+    const history = useHistory()
+
+    useEffect(()=>{
+        if(!isLogIn){
+            console.log("Redirecting")
+            history.push("/")
+        }
+    },[isLogIn,history])
+
+
     return (
-        <div>
-            This is the Profile page
-        </div>
+        <>
+            <h1 style={{textAlign:"center"}}>
+                This is the Profile page
+            </h1>
+ 
+        </>
     )
 }
 

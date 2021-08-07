@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div>
+        <h1 style={{textAlign:"center"}}> 
             This is the About page
-        </div>
+        </h1>
     )
 }
 
